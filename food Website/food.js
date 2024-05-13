@@ -21,7 +21,6 @@ setInterval(() => {
 }, 4000);
 foodCard.forEach((curCard) => {
   curCard.addEventListener("click", () => {
-    console.log(curCard);
 
     let div = document.createElement("div");
     div.classList.add("cardDetail");

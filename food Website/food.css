@@ -1,0 +1,264 @@
+ *{
+    margin: 0%;
+    padding: 0%;
+ }
+ body{
+    font-family: 'Roboto',sans-serif;
+    background-color: rgb(107, 105, 105);
+    color: white;
+ }
+ nav{
+   display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 80px;
+    background-color: black ;
+    z-index: 99;
+    
+ }
+ ul{
+    display: flex;
+    
+ }
+ li{
+    list-style: none;
+ }
+ li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 22px;
+     
+ }
+ .logo{
+   font-size: 21px;
+
+ }
+ .main{
+   display: flex;
+   gap: 33px;
+   justify-content: center;
+   margin-top: 141px;
+   margin: 50px;
+   align-items: center;
+ }
+ .main img{
+   width: 800px;
+   border-radius: 10px;
+   margin-top: 50px;
+ }
+ .main img:hover{
+   
+   box-shadow: 0 0 22px 5px  rgb(218, 203, 215);
+ }
+ .mainText{
+   margin-top: 40px;
+ }
+ .main h1{
+   font-size: 44px;
+ }
+ .main p{
+   margin-top: 22px;
+   color: silver  ;
+ }
+ .main button{
+   width: 140px;
+   height: 39px;
+      color: white;
+      background-color: rgb(255, 83, 20);
+      font: 18px;
+      border: none;
+      border-radius: 5px;
+      margin-top:22px;
+ }
+ .main button:hover{
+   background: transparent;
+   box-shadow: 0 0 20px 5px  rgb(218, 203, 215);
+ }
+ .head{
+   text-align: center;
+   padding: 88px;
+ }
+ .foods{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .foodCard{
+   width: 300px;
+   padding: 11px;
+   background-color: white;
+   margin-inline:22px ;
+   margin-top: 26px;
+   color: black;
+   cursor:pointer;
+ }
+ .foodCard img{
+   width: 100%;
+ }
+ .foodCard p{
+   padding: 7px;
+ }
+ .foodCard button{
+   width: 130px;
+   background-color: orangered;
+   padding: 3px;
+   color: white;
+   font-size: 18px;
+   border: none;
+
+ }
+ .reviews{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;  
+ }
+ .reviewCard{
+
+   width: 300px;
+   padding: 22px;
+   background-color: white;
+   text-align: center;
+   margin-inline: 22px;
+   color: black   ;
+   border-radius: 11px;
+
+   
+}
+.reviewCard img{
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+}
+.trends{
+   width: 900px;
+   height: 300px;
+   position: relative;
+   margin: auto;
+   overflow: hidden;
+}
+.trendFood{
+   display: flex;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   overflow: hidden;  
+   margin: auto;
+   justify-content: center ;
+   transition: all 1s ease;
+}
+.trendFood img{
+   width: 240px;
+   height: 240px;
+   margin-inline: 12px;
+}
+.blogs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+ .blogCard{
+    
+width: 300px;
+height: 270px;
+background-color: white;
+color: black;
+margin-inline: 22px;
+margin-top: 22px;
+padding: 11px;
+ }
+ .blogCard img{
+  width: 100%;
+ 
+ }
+ .blogCard a{
+  text-decoration: none;
+  padding: 4px 12px;
+  background-color: orange;
+  color: white;
+  top: 16px;
+  position: relative;
+ }
+.footer{
+        display: flex;
+        justify-content: space-around;
+        background-color: black;
+        color: white;
+        padding: 66px;
+        margin-top: 66px;
+        flex-wrap: wrap;
+ 
+        
+        border-radius: 10px;
+} 
+ .text{
+  margin-top: 22px;
+ }
+.text p{
+  margin-top: 11px;
+  
+}
+.cardDetail{
+  
+  width: 500px;
+  height: 500px;
+  border-radius: 11px;
+  padding: 22px;
+  background-color: white;
+ text-align: center;
+ position: fixed;
+  top: 4%;
+  left: 50%;
+  right: 50%;
+  bottom: 50px;
+  border-radius: 11px;
+  transform: translate(-50%,40%);
+  color: black  ;
+  margin-top: -50px;
+}
+.cardDetail img{  
+  width:  300px;
+  height: 350px;
+}
+  #icon{
+   position: absolute;
+ top: -170px;;
+ width: 20px;
+ 
+  right: 1px;
+  cursor: pointer;
+  padding: 11px;
+ font-size: 50x;
+ 
+}
+#bar{
+  background-color: aliceblue;
+  font-size: 50px;
+}
+@media screen and (max-width:1100px){
+  .main{
+    display: block;
+    text-align: center;
+  }
+  
+}
+@media screen and (max-width:920px){
+  .trendFood{
+    width: 90%;;
+  }
+  .trendFood img{
+    width: 100px;
+    height: 100px;
+    margin-inline: 6px;
+  }
+ 
+}
+@media screen and (max-width:750px){
+   ul li{
+    display: none;
+   }
+  
+}
